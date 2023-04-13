@@ -22,9 +22,9 @@ class yuan{
 		}
 		void Print()
 		{
-			cout<<"the diameter is:"<<2*r<<endl;
-			cout<<"the circumference is:"<<2*n*r<<endl;
-			cout<<"the area is:"<<n*r*r<<endl;
+			cout<<"直径="<<2*r<<endl;
+			cout<<"周长="<<2*n*r<<endl;
+			cout<<"面积="<<n*r*r<<endl;
 		}
 	private:
 		double r;
