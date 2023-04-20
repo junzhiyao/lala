@@ -3,38 +3,20 @@ using namespace std;
 class huiwen{
 	public:
 		huiwen(){}
-		int GetN(int n)
+		void jisuan(int y,int z)
 		{
-			N=n;
-			return N;
-		}
-		int Getm(int x)
-		{
-			m=x;
-			return m;
-		}
-		int Getk(int y)
-		{
-			k=y;
-			return k;
-		}
-		void jisuan(int x,int y,int z)
-		{
-			N=x;
 			m=y;
 			k=z;
-		for(int l=0;l<N;l++)
-			{
 		   for(num=m+1;num>m;num++)
 		  {
 			int i=num,j=0;
-			while(num>0)
+			while(i>0)
 			{
-			j=j*10+num%10;
-			num/=10;	
+			j=j*10+i%10;
+			i/=10;	
 			}
-			num=i;	
-			if(j==i)
+			if(j==num)
+						
 			{
 				p[a]=j;
 				a++;
@@ -47,11 +29,10 @@ class huiwen{
 		for(int i=0;i<k;i++)
 		{
 			cout<<p[i]<<" ";
-		}
 		}	
 		}
 		private:
-			int N,m,k;
+			int m,k;
 			int p[10];
 			int num=0;
 			int a=0;
@@ -60,11 +41,12 @@ class huiwen{
 int main()
 {
 	int N,m,k;
-	cin>>N>>m>>k;
+	cin>>N;
+	for(int i=0;i<N;i++)
+	{
 	huiwen d1;
-	d1.GetN(N);
-	d1.Getm(m);
-	d1.Getk(k);
-	d1.jisuan(N,m,k);
+	cin>>m>>k;
+	d1.jisuan(m,k);
+	}
 	return 0;
 }
